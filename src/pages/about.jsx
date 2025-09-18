@@ -1,32 +1,11 @@
-import Image from "next/image";
-import { Geist, Geist_Mono } from "next/font/google";
+import React from 'react'
 
-
-export default function Home() {
+const about = () => {
   return (
-    <>
-   <body class="bg-gray-50 text-gray-800 font-sans">
-    <section id="home" class="pt-32 pb-20 px-6 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
-        <div class="container mx-auto flex flex-col md:flex-row items-center">
-            <div class="md:w-1/2 mb-10 md:mb-0">
-                <h1 class="text-4xl md:text-5xl font-bold mb-4">Hi, I'm John Doe</h1>
-                <h2 class="text-2xl md:text-3xl mb-6">Software Developer</h2>
-                <p class="text-xl mb-8">I build exceptional and scalable web applications with clean code.</p>
-                <div class="flex space-x-4">
-                    <a href="#projects" class="bg-green-500 hover:bg-green-600 px-6 py-3 rounded-lg font-semibold transition duration-300">View Projects</a>
-                    <a href="#contact" class="bg-white text-blue-600 hover:bg-gray-100 px-6 py-3 rounded-lg font-semibold transition duration-300">Contact Me</a>
-                </div>
-            </div>
-            <div class="md:w-1/2 flex justify-center">
-                <div class="w-64 h-64 bg-white rounded-full overflow-hidden shadow-2xl flex items-center justify-center">
-                    <i class="fas fa-user text-8xl text-gray-400"></i>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-20 px-6 bg-white">
+    <div>
+      <section id="about" class="py-20 px-6 bg-white">
         <div class="container mx-auto">
+            <h2 class="text-3xl font-bold text-center mb-16">About Me</h2>
             <div class="flex flex-col md:flex-row items-center">
                 <div class="md:w-1/3 mb-10 md:mb-0 flex justify-center">
                     <div class="w-56 h-56 bg-gray-200 rounded-lg overflow-hidden shadow-lg flex items-center justify-center">
@@ -55,9 +34,8 @@ export default function Home() {
             </div>
         </div>
     </section>
-
-
-   </body>
-    </>
-  );
+    </div>
+  )
 }
+
+export default about
